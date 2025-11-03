@@ -3,7 +3,7 @@ import pandas as pd
 import pytest
 from pathlib import Path
 
-from main import transform_dataframe, engineer_features, load_data
+from src.train import transform_dataframe, engineer_features, load_data
 
 @pytest.fixture
 def sample_df():

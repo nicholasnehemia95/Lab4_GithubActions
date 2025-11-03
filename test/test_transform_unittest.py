@@ -6,8 +6,7 @@ from unittest.mock import patch, MagicMock
 import pandas as pd
 
 # Import symbols from your main
-from main import engineer_features, transform_dataframe, load_data
-
+from src.train import transform_dataframe, engineer_features, load_data
 
 class TestTransform(unittest.TestCase):
     def setUp(self):
