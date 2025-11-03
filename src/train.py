@@ -9,6 +9,8 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures
 
+#add comment to enable push
+
 def load_data(input_path: str | None) -> pd.DataFrame:
     if input_path:
         df = pd.read_csv(input_path)
@@ -39,7 +41,7 @@ def build_transformer(df: pd.DataFrame, add_poly: bool) -> ColumnTransformer:
         verbose_feature_names_out=False,
     )
     return pre
-
+c
 def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     # Example feature on California Housing columns (works only if present)
     # If user provides a CSV without these columns, we guard with try/except.
