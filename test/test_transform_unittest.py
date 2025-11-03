@@ -29,7 +29,7 @@ class TestTransform(unittest.TestCase):
         self.assertFalse(out.empty)
         self.assertEqual(len(out), len(self.sample))
 
-    @patch("main.fetch_california_housing")
+    @patch("src.train.fetch_california_housing")
     def test_load_data_default_uses_california_and_renames_target(self, mock_fetch):
         # Build a fake return object with `.frame`
         fake_df = pd.DataFrame({
