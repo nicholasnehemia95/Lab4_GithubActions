@@ -41,7 +41,7 @@ def build_transformer(df: pd.DataFrame, add_poly: bool) -> ColumnTransformer:
         verbose_feature_names_out=False,
     )
     return pre
-c
+
 def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     # Example feature on California Housing columns (works only if present)
     # If user provides a CSV without these columns, we guard with try/except.
